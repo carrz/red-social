@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+  padding: 0;
+  background-color: #ffee58;
+}
+.no-margin{
+  margin: 0!important;
+}
+.no-padding{
+  padding: 0 !important;
+}
+
+nav{
+  height: 84px !important;
+}
+.brand-logo{
+  width: 29%;
+}
+.logo-img{
+  width: 30% !important;
+  margin-left: 10%;
+}
+#nav-mobile{
+  margin-right: 5%;
+}
+.explore{
+  width: 20%;
+  height: 100%;
+}
+
+.main-body{
+  margin-top: 5vh;
+}
+.main{
+  background-color: rgba(0,0,0,0.2);
+}
+.contacts{
+  background-color: blue;
+  height: 600px;
+}
+.post-toolbar{
+  width: 100%;
+}
+.icon-post{
+  width: 32.9%;
+  margin: 10px 0;
+}
