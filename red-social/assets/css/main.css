@@ -20,8 +20,13 @@ nav{
   width: 30% !important;
   margin-left: 10%;
 }
+.nav-icons{
+  font-size: 30px !important;
+  margin-left: 30px;
+}
 #nav-mobile{
-  margin-right: 5%;
+  margin-right: 8%;
+  margin-top: 0.5%;
 }
 .explore{
   width: 20%;
@@ -34,14 +39,27 @@ nav{
 .main{
   background-color: rgba(0,0,0,0.2);
 }
-.contacts{
-  background-color: blue;
-  height: 600px;
-}
 .post-toolbar{
   width: 100%;
 }
 .icon-post{
   width: 32.9%;
   margin: 10px 0;
+}
+.fav-title{
+  width: 100%;
+  padding: 5%;
+  color: #FFFFFF;
+  background-color: black;
+}
+.links{
+  margin-left: 10px;
+  height: 20px;
+}
+section nav ul a{
+  padding: 0 !important;
+  color: #000;
+}
+.nav-links{
+  height: 115px !important;
 }

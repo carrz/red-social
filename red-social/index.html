@@ -8,31 +8,37 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body>
-  <nav>
-    <div class="nav-wrapper black">
-      <a href="#" class="brand-logo"><img class="logo-img" src="assets/img/download.png"></a>
-      <form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-        </div>
-      </form>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">notifications</i></a></li>
-        <li><a href="badges.html"><i class="material-icons">mail_outline</i></a></li>
-        <li><a href="collapsible.html"><i class="material-icons">person</i></a></li>
-      </ul>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo"><img class="logo-img" src="assets/img/download.png"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#"><i class="material-icons nav-icons">notifications</i></a></li>
+          <li><a href="#"><i class="material-icons nav-icons">mail_outline</i></a></li>
+          <li><a href="#"><i class="material-icons nav-icons">person</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+   <!-- Modal Structure -->
+  <div id="add-photo" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
     </div>
-  </nav>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
   <section class="main-body">
     <div class="container">
       <div class="row">
-        <div class="col l7 main no-padding">
+        <div class="col l7 offset-l1 main no-padding">
           <div class="toolbar post-toolbar black">
             <ul class="no-margin">
-              <li class="waves-effect waves-light icon-post center"><a href="#!"><i class="material-icons yellow-text lighten-1-text">format_quote</i></a></li>
-              <li class="waves-effect waves-light icon-post center"><a href="#!"><i class="material-icons yellow-text lighten-1-text">add_a_photo</i></a></li>
-              <li class="waves-effect waves-light icon-post center"><a href="#!"><i class="material-icons yellow-text lighten-1-text">add_location</i></a></li>
+              <li class="waves-effect waves-light icon-post center"><a href="#!" class="btn btn-floating yellow lighten-1 pulse"><i class="material-icons black-text">format_quote</i></a></li>
+              <li class="waves-effect waves-light icon-post center"><a href="#add-photo" class="btn btn-floating modal-trigger yellow lighten-1 pulse"><i class="material-icons black-text">photo_camera</i></a></li>
+              <li class="waves-effect waves-light icon-post center"><a href="#!" class="btn btn-floating yellow lighten-1 pulse"><i class="material-icons black-text">add_location</i></a></li>
             </ul>
           </div>
           <div class="row">
@@ -41,7 +47,7 @@
                 <div class="card-image">
                   <img src="assets/img/4fc0fb85aefe3cdcdab7e9d7b050ca01.jpg">
                   <span class="card-title">Name</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons">favorite_border</i></a>
+                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons black-text">favorite_border</i></a>
                 </div>
                 <div class="card-content">
                   <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -51,7 +57,7 @@
                 <div class="card-image">
                   <img src="assets/img/70d78d9987ca2b4c4c8ad47eb9358553.jpg">
                   <span class="card-title">Name</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons">favorite_border</i></a>
+                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons black-text">favorite_border</i></a>
                 </div>
                 <div class="card-content">
                   <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -61,7 +67,7 @@
                 <div class="card-image">
                   <img src="assets/img/patinar-en-familia.jpg">
                   <span class="card-title">Name</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons">favorite_border</i></a>
+                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons black-text">favorite_border</i></a>
                 </div>
                 <div class="card-content">
                   <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -70,11 +76,72 @@
             </div>
           </div>
         </div>
-        <div class="col l5 contacts"></div>
+        <div class="col l3 contacts no-padding">
+          <div class="fav-title">
+            <h5 class="center no-margin">Favs</h5>
+          </div>
+          <ul class="collection no-margin">
+            <li class="collection-item avatar">
+              <img src="assets/img/images.jpeg" alt="" class="circle">
+              <span class="title"><strong>Monica Bellucci</strong></span>
+              <p>2.6 km esta semana</p>
+              <a href="#!" class="secondary-content"><i class="material-icons black-text">chat</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="assets/img/avatar_38bcce89cf85_128.jpg" alt="" class="circle">
+              <span class="title"><strong>Jason Momoa</strong></span>
+              <p>3.1 km esta semana</p>
+              <a href="#!" class="secondary-content"><i class="material-icons black-text">chat</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="assets/img/avatar_6b764630b5ef_128.jpg" alt="" class="circle">
+              <span class="title"><strong>Orlando Bloom</strong></span>
+              <p>6.1 km esta semana</p>
+              <a href="#!" class="secondary-content"><i class="material-icons black-text">chat</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="assets/img/SofiaDowneyLupin.128.249653.jpg" alt="" class="circle">
+              <span class="title"><strong>Robert Downey Jr</strong></span>
+              <p>5.6 km esta semana</p>
+              <a href="#!" class="secondary-content"><i class="material-icons black-text">chat</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="assets/img/download.jpeg" alt="" class="circle">
+              <span class="title"><strong>Anne Hathaway</strong></span>
+              <p>4.7 km esta semana</p>
+              <a href="#!" class="secondary-content"><i class="material-icons black-text">chat</i></a>
+            </li>
+          </ul>
+          <nav class="black nav-search">
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input id="search" type="search" class="no-margin" required>
+                  <label class="label-icon" for="search"><i class="material-icons glass">search</i></label>
+                </div>
+              </form>
+            </div>
+          </nav>
+          <nav class="no-padding yellow lighten-1 nav-links">
+            <ul>
+              <li class="links"><a href="#">About Us</a></li>
+              <li class="links"><a href="#">Support</a></li>
+              <li class="links"><a href="#">Blog</a></li>
+              <li class="links"><a href="#">Press</a></li>
+              <li class="links"><a href="#">API</a></li>
+              <li class="links"><a href="#">Jobs</a></li>
+              <li class="links"><a href="#">Privacy</a></li>
+              <li class="links"><a href="#">Language</a></li>
+              <li class="links"><a href="#">Terms</a></li>
+              <li class="links"><a href="#">Directory</a></li>
+              <br>
+              <li class="links"><span class="black-text">© 2018 Rollers</span></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
-  </section>
-        
+  </section>     
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
