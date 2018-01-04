@@ -20,34 +20,115 @@
       </div>
     </nav>
   </div>
-   <!-- Modal Structure -->
-  <div id="add-photo" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
   <section class="main-body">
     <div class="container">
       <div class="row">
         <div class="col l7 offset-l1 main no-padding">
           <div class="toolbar post-toolbar black">
             <ul class="no-margin">
-              <li class="waves-effect waves-light icon-post center"><a href="#!" class="btn btn-floating yellow lighten-1 pulse"><i class="material-icons black-text">format_quote</i></a></li>
+              <li class="waves-effect waves-light icon-post center"><a href="#add-text" class="btn btn-floating modal-trigger yellow lighten-1 pulse"><i class="material-icons black-text">format_quote</i></a></li>
               <li class="waves-effect waves-light icon-post center"><a href="#add-photo" class="btn btn-floating modal-trigger yellow lighten-1 pulse"><i class="material-icons black-text">photo_camera</i></a></li>
-              <li class="waves-effect waves-light icon-post center"><a href="#!" class="btn btn-floating yellow lighten-1 pulse"><i class="material-icons black-text">add_location</i></a></li>
+              <li class="waves-effect waves-light icon-post center"><a href="#add-geo" class="btn btn-floating modal-trigger yellow lighten-1 pulse"><i class="material-icons black-text">add_location</i></a></li>
             </ul>
           </div>
+             <!-- Modal par subir fotos -->
+            <div id="add-photo" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h4 class="center">Upload a photo!</h4>
+                <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">file_upload</i>Upload a photo from your device</div>
+                    <div class="collapsible-body">  
+                      <form action="#">
+                        <div class="file-field input-field">
+                          <div class="btn">
+                            <span>File</span>
+                            <input type="file">
+                          </div>
+                          <input type='file' onchange="readURL(this);"/>
+                          <img id="blah" src="http://via.placeholder.com/200/ffffff/ffffff" alt=""/>
+                        </div>
+                      </form>
+                       <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <i class="material-icons prefix">format_quote</i>
+                              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                              <label for="icon_prefix2"></label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <a id="postDevice" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yellow lighten-1 black-text">Post</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">explore</i>Upload a photo from the web</div>
+                    <div class="collapsible-body">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <i class="material-icons prefix">language</i>
+                          <input id="webUrl" type="url" class="validate">
+                          <label for="webUrl"></label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <i class="material-icons prefix">format_quote</i>
+                              <textarea id="icon_prefix1" class="materialize-textarea"></textarea>
+                              <label for="icon_prefix1"></label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <a id="postUrl" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yellow lighten-1 black-text">Post</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+               <!-- Modal par subir texto -->
+            <div id="add-text" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h4 class="center">What's happening?</h4>
+                 <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12 white">
+                        <textarea id="textToPost" class="materialize-textarea"></textarea>
+                        <label for="textToPost"></label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" id="postText" class="modal-action modal-close waves-effect waves-green btn-flat yellow lighten-1 black-text">Post</a>
+              </div>
+            </div>
+               <!-- Modal par subir ubicación -->
+            <div id="add-geo" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h4 class="center">Where are you?</h4>
+                <div><iframe  id="map" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH928tuvFYpYRH5UsfV0PrJg&key=AIzaSyCuQcVb__PVy58JlN9ytn8o_MMBDdIZWds" allowfullscreen></iframe></div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yellow lighten-1 black-text">Post</a>
+              </div>
+            </div>
           <div class="row">
             <div class="col l10 offset-l1 post-overview">
+              <div id="new-post">           
+              </div>
               <div class="card">
                 <div class="card-image">
                   <img src="assets/img/4fc0fb85aefe3cdcdab7e9d7b050ca01.jpg">
                   <span class="card-title">Name</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1"><i class="material-icons black-text">favorite_border</i></a>
+                  <a id="a-heart1" class="btn-floating halfway-fab waves-effect waves-light yellow lighten-1">
+                  <i id="heart1" class="material-icons black-text">favorite_border</i></a>
                 </div>
                 <div class="card-content">
                   <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
