@@ -66,6 +66,13 @@ section nav ul a{
 .nav-links{
   height: 115px !important;
 }
+.logo-modal{
+  width: 45%;
+  margin-top: 4%;
+}
+.form-modal{
+  margin-top: 5%;
+}
 
 /* user-profile styles */
 .user-info{
