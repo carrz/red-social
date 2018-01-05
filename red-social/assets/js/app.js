@@ -4,6 +4,7 @@
 $(document).ready(function(){
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
+
   });
 
 //Materialbox
@@ -131,3 +132,11 @@ $('#postText').click(function(){
   function uploadFile(){
     var storageRef = firebase.storage().ref('img_post/')
   }
+
+// login facebook
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
