@@ -11,7 +11,8 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper black">
-        <a href="#" class="brand-logo"><img class="logo-img" src="assets/img/download.png"></a>
+        <a href="#" class="brand-logo hide-on-med-and-down"><img id="logo" class="logo-img" src="assets/img/download.png"></a>
+        <a href="#" class="brand-logo hide-on-large-only"><img id="tinyLogo" class="logo-tiny" src="assets/img/download.png"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#"><i class="material-icons nav-icons">notifications</i></a></li>
           <li><a href="#"><i class="material-icons nav-icons">mail_outline</i></a></li>
@@ -20,11 +21,20 @@
       </div>
     </nav>
   </div>
+  <div class="toolbar post-toolbar black hide-on-large-only tiny-toolbar ">
+    <ul class="no-margin">
+      <li class="waves-effect waves-light tiny-icon-post center"><a href="#add-geo" class="btn btn-floating yellow lighten-1 pulse tiny-a"><i class="material-icons black-text tiny-symbol">mail_outline</i></a></li>
+      <li class="waves-effect waves-light tiny-icon-post center"><a href="#add-text" class="btn btn-floating modal-trigger yellow lighten-1 pulse tiny-a"><i class="material-icons black-text tiny-symbol">format_quote</i></a></li>
+      <li class="waves-effect waves-light tiny-icon-post center"><a href="#add-photo" class="btn btn-floating modal-trigger yellow lighten-1 pulse tiny-a"><i class="material-icons black-text tiny-symbol">photo_camera</i></a></li>
+      <li class="waves-effect waves-light tiny-icon-post center"><a href="#add-geo" class="btn btn-floating modal-trigger yellow lighten-1 pulse tiny-a"><i class="material-icons black-text tiny-symbol">add_location</i></a></li>
+      <li class="waves-effect waves-light tiny-icon-post center"><a href="#add-geo" class="btn btn-floating yellow lighten-1 pulse tiny-a" id="tiny-user"><i class="material-icons black-text tiny-symbol">person</i></a></li>
+    </ul>
+  </div>
   <section class="main-body">
     <div class="container">
       <div class="row">
-        <div class="col l7 offset-l1 main no-padding">
-          <div class="toolbar post-toolbar black">
+        <div class="col l7 offset-l1 col s12 main no-padding">
+          <div class="toolbar post-toolbar black hide-on-med-and-down">
             <ul class="no-margin">
               <li class="waves-effect waves-light icon-post center"><a href="#add-text" class="btn btn-floating modal-trigger yellow lighten-1 pulse"><i class="material-icons black-text">format_quote</i></a></li>
               <li class="waves-effect waves-light icon-post center"><a href="#add-photo" class="btn btn-floating modal-trigger yellow lighten-1 pulse"><i class="material-icons black-text">photo_camera</i></a></li>
@@ -157,9 +167,9 @@
             </div>
           </div>
         </div>
-        <div class="col l3 contacts no-padding">
+        <div class="col l3 hide-on-med-and-down contacts no-padding">
           <div class="fav-title">
-            <h5 class="center no-margin">Favs</h5>
+            <h5 class="center no-margin flow-text">Favs</h5>
           </div>
           <ul class="collection no-margin">
             <li class="collection-item avatar">
@@ -205,16 +215,16 @@
           </nav>
           <nav class="no-padding yellow lighten-1 nav-links">
             <ul>
-              <li class="links"><a href="#">About Us</a></li>
-              <li class="links"><a href="#">Support</a></li>
-              <li class="links"><a href="#">Blog</a></li>
-              <li class="links"><a href="#">Press</a></li>
-              <li class="links"><a href="#">API</a></li>
-              <li class="links"><a href="#">Jobs</a></li>
-              <li class="links"><a href="#">Privacy</a></li>
-              <li class="links"><a href="#">Language</a></li>
-              <li class="links"><a href="#">Terms</a></li>
-              <li class="links"><a href="#">Directory</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">About Us</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Support</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Blog</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Press</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">API</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Jobs</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Privacy</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Language</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Terms</a></li>
+              <li class="links hide-on-med-and-down"><a href="#">Directory</a></li>
               <br>
               <li class="links"><span class="black-text">© 2018 Rollers</span></li>
             </ul>
@@ -225,59 +235,118 @@
   </section>     
   <section id="user-profile" class="hide">
   	<div class="container">
-      <div class="row">
-        <div class="col l12 xl12">
+      <div class="row fondo-black hide-on-med-and-down">
+        <div class="col l8 offset-l2 s12">
           <div class="user-info">
-            <div class="col l3 xl3">
+            <div class="col l3 xl3 s12">
               <img class="circle user-img" src="assets/img/user.jpg" alt="">
             </div>
-            <div class="col l9 xl9">
-              <p class="name-user">Rodrigo Freeskate</p>
-              <p class="description">Patinador callejero // Experto en saltos y rutas // Buena música // Patinador hasta el infinito</p>
+            <div class="col l9 info-user">
+              <p class="name-user no-margin">Rodrigo Freeskate</p>
+              <p class="description flow-text no-margin">Patinador callejero // Experto en saltos y rutas // Buena música // Patinador hasta el infinito</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row center-align">
-        <div class="col l9 xl9 offset-l3 offset-xl3 description">
+      <div class="row hide-on-large-only">
+        <div class="col l8 offset-l2 s12">
+          <div class="user-info">
+            <div class="col s2  tiny-description">
+              <div class="row">
+                <div class="col s12 center">
+                  <p class="flow-text no-margin">Followers</p>
+                  <p class="bold no-margin">187</p>
+                </div>
+                <div class="col s12 center">
+                  <p class="flow-text no-margin">Kms</p>
+                  <p class="bold no-margin">605</p>
+                </div>
+                <div class="col s12 center">
+                  <p class="flow-text no-margin">Posts</p>
+                  <p class="bold no-margin">300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s7 info-user">
+              <p class="name-user no-margin">Rodrigo Freeskate</p>
+              <p class="description flow-text no-margin">Patinador callejero // Experto en saltos y rutas // Buena música // Patinador hasta el infinito</p>
+            </div>
+            <div class="col s3">
+              <img class="circle user-img" src="assets/img/user.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center-align fondo-black no-margin hide-on-med-and-down">
+        <div class="col l6 xl6 offset-l3 offset-xl3">
           <div class="col l4 xl4">
-            <p>Seguidores:</p>
-            <p>187</p>
+            <p class="flow-text stadistics no-margin">Followers</p>
+            <p class="bold no-margin stadistics-number">187</p>
           </div>
           <div class="col l4 xl4">
-            <p>Kilometros:</p>
-            <p>605</p>
+            <p class="flow-text stadistics no-margin">Kms</p>
+            <p class="bold no-margin stadistics-number">605</p>
           </div>
           <div class="col l4 xl4">
-            <p>Posts:</p>
-            <p>300</p>
+            <p class="flow-text stadistics no-margin">Posts</p>
+            <p class="bold no-margin stadistics-number">300</p>
           </div>
         </div>
       </div>
         <div class="divider"></div>
     </div>
-    <section class="photo-wall">
-      <div class="container">
-        <div class="col l12 xl12">
+    <div class="container">
+      <div class="row">
+        <div class="photo-wall col l12">
       <!-- seccion dinamica (imagenes solo de muestra) -->
-          <div>
-            <img src="http://madblading.com/wp-content/uploads/2015/02/Standard-1024x612.jpg" alt="">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" data-caption="El lunes con la July" src="http://madblading.com/wp-content/uploads/2015/02/Standard-1024x612.jpg" alt="">
+            </div>
           </div>
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQCXJyx6qhfgd5wwcsvL7JWzb6dsPBA-4FXf_-BV4_1HiW7Hi" alt="">
+          <div class="card medium-card">
+            <div class="card-image">
+              <img class="materialboxed" src="https://i0.wp.com/www.roex.es/blog/wp-content/uploads/2017/02/img-20170203-wa0031.jpg" alt="">
+            </div>
           </div>
-          <div>
-            <img src="http://inlinemadrid.com/temp/wp-content/uploads/2015/05/InLine-clases-patinaje-urbano-02-400x350.jpg" alt="">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="http://madblading.com/wp-content/uploads/2015/02/Adri_Slalom.jpg" alt="">
+            </div>
           </div>
-          <div>
-            <img src="http://www.inercia.com/blog/wp-content/uploads/2015/04/alex-blog-apaisat-1.jpg" alt="">
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="http://www.inercia.com/blog/wp-content/uploads/2015/04/alex-blog-apaisat-1.jpg" alt="">
+            </div>
           </div>
-          <div>
-            <img src="http://www.patinesenruta.es/wp-content/uploads/2014/03/uso_freeskate.jpg" alt="">
+          <div class="card medium-card">
+            <div class="card-image">
+              <img class="materialboxed" src="http://www.patinesenruta.es/wp-content/uploads/2014/03/uso_freeskate.jpg" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQCXJyx6qhfgd5wwcsvL7JWzb6dsPBA-4FXf_-BV4_1HiW7Hi" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="http://www.sportlife.es/rcs/galerias/4724/imagenes/thumb/patinaje-urbano-salto-paso-segundo_thumb_e.jpg" alt="">
+            </div>
+          </div>
+          <div class="card medium-card">
+            <div class="card-image">
+              <img class="materialboxed" src="https://ldvjorge.files.wordpress.com/2012/10/vlcsnap-2012-10-07-23h01m32s196.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img class="materialboxed" src="http://inlinemadrid.com/temp/wp-content/uploads/2015/05/InLine-clases-patinaje-urbano-03-1060x450.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
-  </section>
+    </div>
   </section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>

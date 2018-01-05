@@ -16,11 +16,31 @@ $(document).ready(function(){
     $('.modal').modal();
   });
 
+//Materialbox
+ $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
 // Evento boton user
 $('#link-user').click(function(){
   $('#user-profile').removeClass('hide');
   $('.main-body').addClass('hide');
 });
+$('#tiny-user').click(function(){
+  $('#user-profile').removeClass('hide');
+  $('.main-body').addClass('hide');
+});
+
+//Evento newsfeed
+$('#logo').click(function(){
+  $('.main-body').removeClass('hide');
+  $('#user-profile').addClass('hide');
+});
+$('#tinyLogo').click(function(){
+  $('.main-body').removeClass('hide');
+  $('#user-profile').addClass('hide');
+});
+
 //Menu colapsable
 $(document).ready(function(){
     $('.collapsible').collapsible();
@@ -41,7 +61,7 @@ $(document).ready(function(){
         }
 
 
-//Cambiando icono <3 (No funciona)
+//Cambiando icono <3
 $('#heart1').click(function(){
 	$('#heart1').remove();
   $('#a-heart1').append("<i class='material-icons black-text'>favorite</i>");
@@ -110,7 +130,7 @@ $('#postText').click(function(){
           "<i class='material-icons black-text'>favorite_border</i>" +
         "</a>" +
       "<div class='card-content'>" +
-        "<p class='white-text'>" + "<i class='material-icons prefix'>format_quote</i>" + textPost + "</p>" +
+        "<p class='white-text flow-text'>" + "<i class='material-icons prefix'>format_quote</i>" + textPost + "</p>" +
       "</div>" +
     "</div>"
     );
