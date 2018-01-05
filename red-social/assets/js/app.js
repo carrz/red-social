@@ -1,14 +1,4 @@
 
-//Firebase
-var config = {
-    apiKey: "AIzaSyAVbjIYJMkmhNLHinmsiMR5dbbVBScUTqQ",
-    authDomain: "red-social-spring3.firebaseapp.com",
-    databaseURL: "https://red-social-spring3.firebaseio.com",
-    projectId: "red-social-spring3",
-    storageBucket: "",
-    messagingSenderId: "949348878375"
-  };
-  firebase.initializeApp(config);
 
 //Modal
 $(document).ready(function(){
@@ -105,3 +95,9 @@ $('#postText').click(function(){
     "</div>"
     );
 })
+
+// agregando posteos de imagenes y texto a la base de datos
+// (no funciona)
+  function uploadFile(){
+    var storageRef = firebase.storage().ref('img_post/')
+  }

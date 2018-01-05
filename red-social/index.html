@@ -226,12 +226,12 @@
   <section id="user-profile" class="hide">
   	<div class="container">
       <div class="row">
-        <div class="col l12 xl12">
+        <div class="col s12 m12 l12 xl12">
           <div class="user-info">
-            <div class="col l3 xl3">
+            <div class="col s12 m12 l3 xl3">
               <img class="circle user-img" src="assets/img/user.jpg" alt="">
             </div>
-            <div class="col l9 xl9">
+            <div class="col s12 m12 l9 xl9">
               <p class="name-user">Rodrigo Freeskate</p>
               <p class="description">Patinador callejero // Experto en saltos y rutas // Buena música // Patinador hasta el infinito</p>
             </div>
@@ -258,27 +258,40 @@
     </div>
     <section class="photo-wall">
       <div class="container">
-        <div class="col l12 xl12">
+        <div class="col s12 m12 l12 xl12 ">
       <!-- seccion dinamica (imagenes solo de muestra) -->
           <div>
-            <img src="http://madblading.com/wp-content/uploads/2015/02/Standard-1024x612.jpg" alt="">
+            <img class="responsive-img" src="http://madblading.com/wp-content/uploads/2015/02/Standard-1024x612.jpg" alt="">
           </div>
           <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQCXJyx6qhfgd5wwcsvL7JWzb6dsPBA-4FXf_-BV4_1HiW7Hi" alt="">
+            <img class="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQCXJyx6qhfgd5wwcsvL7JWzb6dsPBA-4FXf_-BV4_1HiW7Hi" alt="">
           </div>
           <div>
-            <img src="http://inlinemadrid.com/temp/wp-content/uploads/2015/05/InLine-clases-patinaje-urbano-02-400x350.jpg" alt="">
+            <img class="responsive-img" src="http://inlinemadrid.com/temp/wp-content/uploads/2015/05/InLine-clases-patinaje-urbano-02-400x350.jpg" alt="">
           </div>
           <div>
-            <img src="http://www.inercia.com/blog/wp-content/uploads/2015/04/alex-blog-apaisat-1.jpg" alt="">
+            <img class="responsive-img" src="http://www.inercia.com/blog/wp-content/uploads/2015/04/alex-blog-apaisat-1.jpg" alt="">
           </div>
           <div>
-            <img src="http://www.patinesenruta.es/wp-content/uploads/2014/03/uso_freeskate.jpg" alt="">
+            <img class="responsive-img" src="http://www.patinesenruta.es/wp-content/uploads/2014/03/uso_freeskate.jpg" alt="">
           </div>
         </div>
       </div>
   </section>
   </section>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAVbjIYJMkmhNLHinmsiMR5dbbVBScUTqQ",
+      authDomain: "red-social-spring3.firebaseapp.com",
+      databaseURL: "https://red-social-spring3.firebaseio.com",
+      projectId: "red-social-spring3",
+      storageBucket: "red-social-spring3.appspot.com",
+      messagingSenderId: "949348878375"
+    };
+    firebase.initializeApp(config);
+  </script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

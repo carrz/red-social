@@ -86,6 +86,7 @@ section nav ul a{
 .photo-wall img{
   width: 35em;
   border-radius: 0.5em;
+  margin: 5%;
 }
 
 #blah{
